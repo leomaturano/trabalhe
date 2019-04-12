@@ -6,14 +6,13 @@ import android.support.v7.widget.Toolbar;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 
-public class MainActivity extends AppCompatActivity {
+public class ListRepositoriesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_listrepositories);
         Fresco.initialize(this);
-        setContentView(R.layout.activity_main);
-
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
